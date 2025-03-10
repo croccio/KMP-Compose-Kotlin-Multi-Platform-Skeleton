@@ -1,5 +1,4 @@
 # Kotlin Multiplatform (KMP) Project Skeleton 🚀
-
 This repository provides a **foundational structure** for a Kotlin Multiplatform (KMP) project using **Compose**, supporting **Android, iOS, desktop, and web** applications. It includes essential features such as **navigation, dependency injection, and other necessary components** to streamline full app development.
 
 ⚠️ **Work in Progress**: This project is still evolving, and some parts may change over time.
@@ -8,9 +7,9 @@ This repository provides a **foundational structure** for a Kotlin Multiplatform
 
 ☑️ **TODO**
 - [x] [Buildable projects for Android, iOS, desktop, web](#buildable-projects-for-android-ios-desktop-web)
-- [x] [Dependency injection](/README.md)
-- [ ] Navigation
-- [ ] Navigation with Parameter
+- [x] [Dependency injection](/it/croccio/ticketshare/library/kdi/README_KDI.md)
+- [x] [Navigation](/it/croccio/ticketshare/library/navigation/README_Navigation.md)
+- [x] Navigation with Parameter
 - [ ] Architecture
 - [ ] Rest client
 - [ ] Tests
