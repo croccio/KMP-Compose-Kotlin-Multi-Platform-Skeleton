@@ -12,6 +12,8 @@ This repository provides a **foundational structure** for a Kotlin Multiplatform
 - [x] Navigation with Parameter
 - [ ] Architecture
 - [ ] Rest client
+- [ ] Localization
+- [ ] Native navigation experience
 - [ ] Tests
 - [ ] Convert DI to separated library
 - [ ] Convert Navigation to separated library
