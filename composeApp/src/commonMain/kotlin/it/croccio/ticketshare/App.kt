@@ -20,10 +20,8 @@ fun App() {
     MaterialTheme {
         val routes by injection<Routes>()
         rememberNavController()
+            .also { navHostController -> inject(Singleton { navHostController }) }
             .createNavGraph(TicketMainRoute, routes)
-            .let { navHostController ->
-                inject(Singleton { navHostController })
-            }
 
     }
 }

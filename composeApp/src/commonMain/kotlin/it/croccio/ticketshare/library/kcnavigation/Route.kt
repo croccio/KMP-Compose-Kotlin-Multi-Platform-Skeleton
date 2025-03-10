@@ -21,7 +21,7 @@ interface Routes {
 
 }
 
-inline fun Route.toPath(): String =
+fun Route.toPath(): String =
     "${this::class.simpleName}"
 
 inline fun <reified ARGUMENT> RouteWithParameter.toPath(): String =
