@@ -8,7 +8,7 @@ This repository provides a **foundational structure** for a Kotlin Multiplatform
 
 ☑️ **TODO**
 - [x] [Buildable projects for Android, iOS, desktop, web](#buildable-projects-for-android-ios-desktop-web)
-- [ ] Dependency injection
+- [x] [Dependency injection](/README.md)
 - [ ] Navigation
 - [ ] Navigation with Parameter
 - [ ] Architecture
