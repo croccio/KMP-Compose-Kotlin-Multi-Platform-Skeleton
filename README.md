@@ -7,16 +7,16 @@ This repository provides a **foundational structure** for a Kotlin Multiplatform
 💡 **Contributions Welcome!** If you have improvements or fixes, feel free to open a **Pull Request (PR)**—your contributions are greatly appreciated
 
 ☑️ **TODO**
-- [ ] [Buildable projects for Android, iOS, desktop, web](#buildable-projects-for-android-ios-desktop-web)
+- [x] [Buildable projects for Android, iOS, desktop, web](#buildable-projects-for-android-ios-desktop-web)
 - [ ] Dependency injection
 - [ ] Navigation
 - [ ] Navigation with Parameter
 - [ ] Architecture
 - [ ] Rest client
 - [ ] Tests
-- [ ] Convert DI to library
-- [ ] Convert Navigation to library
-- [ ] Convert Rest Client to library
+- [ ] Convert DI to separated library
+- [ ] Convert Navigation to separated library
+- [ ] Convert Rest Client to separated library
 - [ ] ...
 
 ### Buildable projects for Android, iOS, desktop, web
@@ -27,3 +27,4 @@ As you can see in the project structure we have on module called _composeApp_ wi
 - **desktopMain**: contains the Desktop project then use the common code
 - **iosMain**: contains the code that is built as a library to use by the _iosApp_
 - **wasmJsMain**: contains the code that is built as a library used by the _web app_
+
