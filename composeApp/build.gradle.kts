@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.kotlinCocoapods)
 }
 
 kotlin {
@@ -27,6 +28,18 @@ kotlin {
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
+            isStatic = true
+        }
+    }
+
+    cocoapods {
+        version = libs.versions.app.version.code.get()
+        ios.deploymentTarget = "14.1"
+        podfile = project.file("../iosApp/Podfile")
+        homepage = "https://github.com/croccio/KMP-Compose-Kotlin-Multi-Platform-Skeleton"
+        summary= "This repository provides a foundational structure for a Kotlin Multiplatform (KMP) project using Compose, supporting Android, iOS, desktop, and web** applications. It includes essential features such as **navigation, dependency injection, and other necessary components to streamline full app development."
+        framework {
+            baseName = "shared"
             isStatic = true
         }
     }
@@ -84,8 +97,8 @@ android {
         applicationId = "it.croccio.ticketshare"
         minSdk = libs.versions.android.minSdk.get().toInt()
         targetSdk = libs.versions.android.targetSdk.get().toInt()
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = libs.versions.app.version.code.get().toInt()
+        versionName = libs.versions.app.version.name.get()
     }
     packaging {
         resources {
@@ -114,7 +127,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "it.croccio.ticketshare"
-            packageVersion = "1.0.0"
+            packageVersion = libs.versions.app.version.name.get()
         }
     }
 }
