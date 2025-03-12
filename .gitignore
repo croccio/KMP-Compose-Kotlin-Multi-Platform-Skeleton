@@ -60,6 +60,7 @@ iosApp/build/
 iosApp/*.xcodeproj/project.xcworkspace/
 iosApp/*.xcodeproj/xcuserdata/
 iosApp/*.xcodeproj/xcshareddata/
+composeApp/composeApp.podspec
 
 # Web
 *.cache/
