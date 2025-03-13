@@ -35,7 +35,7 @@ kotlin {
 
     cocoapods {
         version = libs.versions.app.version.code.get()
-        ios.deploymentTarget = "14.1"
+        ios.deploymentTarget = "16"
         podfile = project.file("../iosApp/Podfile")
         homepage = "https://github.com/croccio/KMP-Compose-Kotlin-Multi-Platform-Skeleton"
         summary= "This repository provides a foundational structure for a Kotlin Multiplatform (KMP) project using Compose, supporting Android, iOS, desktop, and web** applications. It includes essential features such as **navigation, dependency injection, and other necessary components to streamline full app development."
