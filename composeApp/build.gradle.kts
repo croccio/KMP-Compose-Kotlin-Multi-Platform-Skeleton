@@ -82,6 +82,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
+            implementation(libs.croccio.kdi)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
@@ -118,6 +119,8 @@ android {
 }
 
 dependencies {
+    implementation(libs.croccio.kdi)
+
     debugImplementation(compose.uiTooling)
 }
 
