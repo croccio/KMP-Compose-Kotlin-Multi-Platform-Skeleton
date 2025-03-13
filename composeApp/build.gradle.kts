@@ -10,6 +10,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.kover)
     alias(libs.plugins.kotlinCocoapods)
 }
 
@@ -43,7 +44,7 @@ kotlin {
             isStatic = true
         }
     }
-    
+
     jvm("desktop")
     
     @OptIn(ExperimentalWasmDsl::class)
