@@ -9,9 +9,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import it.croccio.compose.swipe.navigation.Navigator
 import it.croccio.kdi.byInjection
 import it.croccio.ticketshare.app.navigation.route.TicketDetailRoute
-import it.croccio.ticketshare.library.kcnavigation.Navigator
 
 @Composable
 fun MainScreen(navigator: Navigator = byInjection()) {

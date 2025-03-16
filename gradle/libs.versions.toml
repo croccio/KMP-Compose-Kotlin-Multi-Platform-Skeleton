@@ -17,12 +17,14 @@ kover = "0.9.1"
 androidx-activity = "1.10.1"
 
 kdi-version = "1.0.3"
+csn-version = "1.0.0-RC2"
 
 [libraries]
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
 androidx-activity = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
 croccio-kdi = { module = "io.github.croccio.kdi:shared", version.ref = "kdi-version" }
+croccio-csn = { module = "io.github.croccio.csnavigation:shared", version.ref = "csn-version" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 
 [plugins]

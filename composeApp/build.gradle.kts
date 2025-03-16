@@ -91,6 +91,7 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.croccio.kdi)
+            implementation(libs.croccio.csn)
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

@@ -5,8 +5,8 @@ import androidx.compose.material.Button
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
+import it.croccio.compose.swipe.navigation.Navigator
 import it.croccio.kdi.byInjection
-import it.croccio.ticketshare.library.kcnavigation.Navigator
 
 @Composable
 fun TicketDetailScreen(

@@ -1,8 +1,8 @@
 package it.croccio.ticketshare.app.navigation.route
 
-import it.croccio.ticketshare.library.kcnavigation.Route
-import it.croccio.ticketshare.library.kcnavigation.RouteArgument
-import it.croccio.ticketshare.library.kcnavigation.RouteWithArgument
+import it.croccio.compose.swipe.navigation.Route
+import it.croccio.compose.swipe.navigation.RouteArgument
+import it.croccio.compose.swipe.navigation.RouteWithArgument
 
 
 data object TicketMainRoute : Route()
