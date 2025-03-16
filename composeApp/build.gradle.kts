@@ -68,6 +68,7 @@ kotlin {
                         add(rootDirPath)
                         add(projectDirPath)
                     }
+                    client = KotlinWebpackConfig.DevServer.Client(false)
                 }
             }
         }
