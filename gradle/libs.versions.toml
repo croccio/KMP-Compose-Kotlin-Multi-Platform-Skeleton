@@ -3,22 +3,25 @@ agp = "8.5.2"
 android-compileSdk = "35"
 android-minSdk = "24"
 android-targetSdk = "35"
+
 app-version-name = "1.0.0"
 app-version-code = "1"
-kover = "0.9.1"
-kdi-version = "1.0.1"
 
-compose-multiplatform = "1.7.0"
 kotlin = "2.1.10"
 kotlinx-coroutines = "1.10.1"
 kotlinx-serialization-json = "1.8.0"
+compose-multiplatform = "1.7.3"
 jetbrainsKotlinJvm = "1.9.24"
-androidx-navigation = "2.7.0-alpha07"
+kover = "0.9.1"
+
+androidx-activity = "1.10.1"
+
+kdi-version = "1.0.3"
 
 [libraries]
-androidx-navigation-compose = { module = "org.jetbrains.androidx.navigation:navigation-compose", version.ref = "androidx-navigation" }
 kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization-json" }
+androidx-activity = { module = "androidx.activity:activity-compose", version.ref = "androidx-activity" }
 croccio-kdi = { module = "io.github.croccio.kdi:shared", version.ref = "kdi-version" }
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
 

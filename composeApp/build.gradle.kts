@@ -80,6 +80,7 @@ kotlin {
 
         androidMain.dependencies {
             implementation(compose.preview)
+            implementation(libs.androidx.activity)
         }
         commonMain.dependencies {
             implementation(compose.runtime)
@@ -88,7 +89,6 @@ kotlin {
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
-            implementation(libs.androidx.navigation.compose)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.croccio.kdi)
         }
@@ -128,6 +128,7 @@ android {
 
 dependencies {
     implementation(libs.croccio.kdi)
+    implementation(libs.croccio.csn)
 
     debugImplementation(compose.uiTooling)
 }
