@@ -12,14 +12,12 @@ Start by creating your routes. You can define routes with or without parameters.
 ✅ Route Without Parameters
 
 ```
-@Serializable
 data object RouteWithoutParameter : Route()
 ```
 
 ✅ Route With Parameters
 
 ```
-@Serializable
 data class RouteWithParameter(
     override val argument: Argument
 ) : RouteWithArgument(

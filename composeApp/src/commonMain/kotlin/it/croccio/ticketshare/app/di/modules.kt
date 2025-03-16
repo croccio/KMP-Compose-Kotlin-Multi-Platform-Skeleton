@@ -1,5 +1,8 @@
 package it.croccio.ticketshare.app.di
 
-val modules = setOf(
-    RouteViewModule(),
+import it.croccio.kdi.Module
+
+val modules = setOf<Module>(
+    AppModule(),
+    RouteModule(),
 )

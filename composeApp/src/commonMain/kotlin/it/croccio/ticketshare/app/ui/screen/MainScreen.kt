@@ -9,15 +9,12 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.navigation.NavHostController
+import it.croccio.kdi.byInjection
 import it.croccio.ticketshare.app.navigation.route.TicketDetailRoute
-import it.croccio.ticketshare.library.kdi.injection
-import it.croccio.ticketshare.library.kcnavigation.toPath
+import it.croccio.ticketshare.library.kcnavigation.Navigator
 
 @Composable
-fun MainScreen() {
-
-    val navController: NavHostController by injection()
+fun MainScreen(navigator: Navigator = byInjection()) {
 
     Scaffold {
         Column(
@@ -29,12 +26,8 @@ fun MainScreen() {
             Text("Home view")
             Button(
                 onClick = {
-                    navController.navigate(
-                        TicketDetailRoute(
-                            ticket = TicketDetailRoute.Argument(
-                                "Ticket 1"
-                            )
-                        ).toPath<TicketDetailRoute.Argument>()
+                    navigator.navigate(
+                        TicketDetailRoute(argument = TicketDetailRoute.Argument("ticket 1"))
                     )
                 }
             ) {
@@ -42,12 +35,8 @@ fun MainScreen() {
             }
             Button(
                 onClick = {
-                    navController.navigate(
-                        TicketDetailRoute(
-                            ticket = TicketDetailRoute.Argument(
-                                "Ticket 2"
-                            )
-                        ).toPath<TicketDetailRoute.Argument>()
+                    navigator.navigate(
+                        TicketDetailRoute(argument = TicketDetailRoute.Argument("ticket 2"))
                     )
                 }
             ) {

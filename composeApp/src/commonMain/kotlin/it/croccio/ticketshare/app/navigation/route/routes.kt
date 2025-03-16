@@ -2,20 +2,18 @@ package it.croccio.ticketshare.app.navigation.route
 
 import it.croccio.ticketshare.library.kcnavigation.Route
 import it.croccio.ticketshare.library.kcnavigation.RouteArgument
-import it.croccio.ticketshare.library.kcnavigation.RouteWithParameter
-import kotlinx.serialization.Serializable
+import it.croccio.ticketshare.library.kcnavigation.RouteWithArgument
 
-@Serializable
+
 data object TicketMainRoute : Route()
 
-@Serializable
 data class TicketDetailRoute(
-    val ticket: Argument
-) : RouteWithParameter(ticket) {
-
-    @Serializable
+    override val argument: Argument
+) : RouteWithArgument(
+    argument
+) {
     class Argument(
-        val name: String,
-    ): RouteArgument()
+        val ticket: String
+    ) : RouteArgument()
 
 }

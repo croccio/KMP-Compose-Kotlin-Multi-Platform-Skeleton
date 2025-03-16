@@ -5,24 +5,22 @@ import androidx.compose.material.Button
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavHostController
-import it.croccio.ticketshare.app.navigation.route.TicketDetailRoute
-import it.croccio.ticketshare.library.kdi.injection
+import it.croccio.kdi.byInjection
+import it.croccio.ticketshare.library.kcnavigation.Navigator
 
 @Composable
 fun TicketDetailScreen(
-    ticket: TicketDetailRoute.Argument,
+    navigator: Navigator = byInjection(),
+    ticket: String,
 ) {
-
-    val navController: NavHostController by injection()
 
     Scaffold {
         Column {
             Text("Detail view")
-            Text("Item name: ${ticket.name}")
+            Text("Item name: $ticket")
             Button(
                 onClick = {
-                    navController.popBackStack()
+                    navigator.popBackStack()
                 }
             ) {
                 Text("Go back")
